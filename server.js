@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://todo:dbtodoapp@cluster0.lxpsa.mongodb.net/', {
+mongoose.connect('mongodb+srv://todo:dbtodoapp@cluster0.lxpsa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
